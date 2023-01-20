@@ -4,11 +4,11 @@ module "cloudrun" {
 }
   
 resource "random_pet" "name2" {
- length    = "14"
+ length    = "15"
  separator = "-"
 }
 
 resource "random_pet" "name3" {
- length    = "7"
+ length    = "8"
  separator = "-"
 }
