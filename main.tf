@@ -1,19 +1,19 @@
-module "cloudrun" {
-  source  = "app.terraform.io/georgiman-tfc4b/cloudrun/google"
-  version = "0.0.2"
-}
+# module "cloudrun" {
+#   source  = "app.terraform.io/georgiman-tfc4b/cloudrun/google"
+#   version = "0.0.2"
+# }
   
-resource "random_pet" "name222" {
+resource "random_pet" "name22" {
  length    = "15"
  separator = "-"
 }
 
-resource "random_pet" "name333" {
+resource "random_pet" "name33" {
  length    = "8"
  separator = "-"
 }
 
-resource "null_resource" "georgiman111" {
+resource "null_resource" "georgiman11" {
   triggers = {
     always_run = "${timestamp()}"
   }
