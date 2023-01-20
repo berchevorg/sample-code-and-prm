@@ -3,17 +3,17 @@
    version = "0.0.2"
  }
   
-resource "random_pet" "name222" {
+resource "random_pet" "name22" {
  length    = "15"
  separator = "-"
 }
 
-resource "random_pet" "name332" {
+resource "random_pet" "name32" {
  length    = "8"
  separator = "-"
 }
 
-resource "null_resource" "georgiman112" {
+resource "null_resource" "georgiman11" {
   triggers = {
     always_run = "${timestamp()}"
   }
