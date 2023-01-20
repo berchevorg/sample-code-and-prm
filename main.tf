@@ -13,12 +13,16 @@ resource "random_pet" "name333" {
  separator = "-"
 }
 
-  resource "null_resource" "georgiman111" {
-  triggers {
-    build_number = "${timestamp()}"
+resource "null_resource" "georgiman111" {
+  triggers = {
+    always_run = "${timestamp()}"
   }
 
   provisioner "local-exec" {
     command = "echo hello georgiman"
   }
 }
+
+  
+  
+    
